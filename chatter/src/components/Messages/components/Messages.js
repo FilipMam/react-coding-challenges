@@ -55,11 +55,7 @@ function Messages() {
             <Header />
             <div className="messages__list" id="message-list">
                 {messages.map((msg, i) => (
-                    <Message
-                        key={`msg${i}`}
-                        message={msg}
-                        isLastMessage={false}
-                    ></Message>
+                    <Message key={`msg${i}`} message={msg}></Message>
                 ))}
                 {isTypingMessage}
             </div>
